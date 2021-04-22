@@ -1,0 +1,3 @@
+DATABASE_NAME=company_manager
+DATABASE_HOST=localhost
+PORT=3001

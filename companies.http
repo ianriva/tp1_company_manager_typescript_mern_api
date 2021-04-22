@@ -1,0 +1,27 @@
+@api = http://localhost:3001
+
+GET {{api}}/companies
+###
+POST {{api}}/companies
+Content-Type: application/json
+
+{
+    "denomination": "company 1",
+    "phone": "261375893",
+    "bussinesHours": "Lunes a viernes de 8 a 13hs",
+    "address": "Rioja 56 Ciudad Mendoza Argentina",
+    "email": "company1@email.com",
+    "latitude": 34.3454,
+    "longitude": 32.5456
+}
+###
+GET {{api}}/companies/607e11b337d1fc223baf8b7f
+###
+DELETE {{api}}/companies/1
+###
+PUT {{api}}/companies/607e11b337d1fc223baf8b7f
+Content-Type: application/json
+
+{
+    "denomination": "Company 01"
+}
